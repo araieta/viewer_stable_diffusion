@@ -28,4 +28,4 @@ Per eseguire questo programma è necessario avere Python installato sul proprio 
    ```bash
    git clone [https://github.com/tuo-username/nome-repository.git](https://github.com/tuo-username/nome-repository.git)
    cd nome-repository
-   python app.py
+   python stable_viewer.py
