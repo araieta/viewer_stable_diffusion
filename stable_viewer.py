@@ -21,7 +21,7 @@ class SDMetadataViewer:
         self.sidebar = tk.Frame(self.root, width=320, bg="#2b2b2b")
         self.sidebar.pack(side=tk.LEFT, fill=tk.Y)
 
-        self.btn_open = tk.Button(self.sidebar, text="📂 Seleziona Cartella", command=self.load_folder, 
+        self.btn_open = tk.Button(self.sidebar, text="Seleziona Cartella", command=self.load_folder, 
                                  bg="#4e5154", fg="white", font=("Segoe UI", 9, "bold"))
         self.btn_open.pack(fill=tk.X, padx=10, pady=10)
 
@@ -157,7 +157,7 @@ class SDMetadataViewer:
             self.root.clipboard_clear()
             self.root.clipboard_append(self.current_prompt)
             old_text = self.btn_copy["text"]
-            self.btn_copy.config(text="✅ Copiato!", bg="#2d8a4e")
+            self.btn_copy.config(text="Copiato!", bg="#2d8a4e")
             self.root.after(1000, lambda: self.btn_copy.config(text=old_text, bg="#365880"))
 
 if __name__ == "__main__":
