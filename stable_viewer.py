@@ -28,7 +28,7 @@ class SDMetadataViewer:
         # BARRA DI RICERCA
         search_frame = tk.Frame(self.sidebar, bg="#2b2b2b")
         search_frame.pack(fill=tk.X, padx=10, pady=(0, 10))
-        tk.Label(search_frame, text="🔍 Cerca nel prompt:", bg="#2b2b2b", fg="#aaa", font=("Segoe UI", 8)).pack(anchor="w")
+        tk.Label(search_frame, text="Cerca nel prompt:", bg="#2b2b2b", fg="#aaa", font=("Segoe UI", 8)).pack(anchor="w")
         self.search_var = tk.StringVar()
         self.search_var.trace_add("write", self.filter_gallery)
         self.search_entry = tk.Entry(search_frame, textvariable=self.search_var, bg="#1e1e1e", fg="white", insertbackground="white", borderwidth=0)
